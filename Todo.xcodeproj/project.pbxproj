@@ -16,6 +16,7 @@
 		995EBD2829023986008426C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 995EBD2729023986008426C3 /* GoogleService-Info.plist */; };
 		995EBD2C29023FDB008426C3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995EBD2B29023FDB008426C3 /* RegisterViewController.swift */; };
 		995EBD2F29024E80008426C3 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995EBD2E29024E80008426C3 /* Todo.swift */; };
+		995EBD3529031D32008426C3 /* TodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995EBD3429031D32008426C3 /* TodoController.swift */; };
 		A466A090EA24332F1794173D /* Pods_Todo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCD656711E152DE548F2E12 /* Pods_Todo.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		995EBD2729023986008426C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		995EBD2B29023FDB008426C3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		995EBD2E29024E80008426C3 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		995EBD3429031D32008426C3 /* TodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				995EBD1529023650008426C3 /* SceneDelegate.swift */,
 				995EBD1729023650008426C3 /* ViewController.swift */,
 				995EBD2B29023FDB008426C3 /* RegisterViewController.swift */,
+				995EBD3429031D32008426C3 /* TodoController.swift */,
 				995EBD1929023650008426C3 /* Main.storyboard */,
 				995EBD1C29023652008426C3 /* Assets.xcassets */,
 				995EBD1E29023652008426C3 /* LaunchScreen.storyboard */,
@@ -227,6 +230,7 @@
 				995EBD1829023650008426C3 /* ViewController.swift in Sources */,
 				995EBD1429023650008426C3 /* AppDelegate.swift in Sources */,
 				995EBD1629023650008426C3 /* SceneDelegate.swift in Sources */,
+				995EBD3529031D32008426C3 /* TodoController.swift in Sources */,
 				995EBD2C29023FDB008426C3 /* RegisterViewController.swift in Sources */,
 				995EBD2F29024E80008426C3 /* Todo.swift in Sources */,
 			);
