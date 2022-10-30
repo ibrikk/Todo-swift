@@ -11,12 +11,21 @@ import FirebaseAuth
 class TodoController: UIViewController {
     
     @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var todosTableView: UITableView!
+    
+    
+    let todos: [Todo] = [
+        Todo(title: "Do the dishes", isComplete: false, image: "dishes"),
+        Todo(title: "dog", isComplete: true, image: "dog")
+    ]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        todosTableView.dataSource = self
+
         // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func logoutPressed(_ sender: UIButton) {
@@ -31,15 +40,23 @@ class TodoController: UIViewController {
     }
     
     
+}
+
+extension TodoController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return todos.count
+    }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let todo = todos[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath)
+        cell.textLabel?.text = todos[indexPath.row].title
+        cell.imageView?.image = UIImage(named: todos[indexPath.row].image)
+        
+        return cell
+    }
+    
+    
     
 }
